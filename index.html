@@ -25,7 +25,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Shane Dirksen</h1>
-								<p>Computer Vision | AI Research</p>
+								<p>Saliency and Human Cognition in AR/VR | Computer Vision | AI Research</p>
 							</div>
 						</div>
 						<nav>
@@ -45,7 +45,7 @@
 						<article id="about">
 							<h2 class="major">About</h2>
 							<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-							<p>Hello, I'm Shane Dirksen, I'm from California, I'm a US Army veteran, and I hold a Bachelor's Degree in Computer Science from Cal Poly Pomona and I'm a PhD student at UC Santa Barbara. I have an interest in AI research, particularly with deep learning applications like computer vision.</p>
+							<p>I am a Computer Science PhD student at UC Santa Barbara, advised by Prof. Tobias Höllerer in the Four Eyes Lab. My research is on modulating saliency to affect human cognition in augmented and virtual reality (AR and VR), whether through conventional highlighting techniques or through AI that modulates saliency without losing information in the scene. I am the lead developer and experimenter on an ongoing Magic Leap 2 study in DARPA's Intrinsic Cognitive Security program, and I built its study app in Unity and OpenXR with room calibration and head, eye and controller tracking. My first-author paper on modeling object attention in mobile AR won the Best Paper Award at the ACM MobiHoc 2025 extended reality (XR) security workshop, and a paper on object recall in an AR office scene, where I am co-second author, received an Honorable Mention at IEEE ISMAR 2026 (TVCG). Before graduate school I served four years as a US Army airborne infantryman, then earned my B.S. in computer science magna cum laude at Cal Poly Pomona, where I did research in computer vision, deep learning and anomaly detection.</p>
 						</article>
 					
 
@@ -53,206 +53,507 @@
 							<article id="projects">
 								<h2 class="major">Projects</h2>
 
+								<div class="project-grid">
+
 								<!-- Project Card 1 -->
+								<div class="project-card featured">
+									<img src="images/ml2_playback.gif" alt="Replay of a recorded Magic Leap 2 study session" class="project-image" loading="lazy">
+									<div class="project-description">
+										<h3>Ongoing Magic Leap 2 Study</h3>
+										<p>As lead developer and experimenter on an ongoing Magic Leap 2 study in DARPA's Intrinsic Cognitive Security program, I built the study app in Unity and OpenXR. It calibrates each room with ArUco markers and spatial anchors and records head pose, eye gaze and controller pose on every frame. I also built the optimizer that places the virtual objects by balancing saliency, apparent size, congruency and modality, and the replay tool for the gaze and selection data, shown in the clip.</p>
+										<!-- Language Tags/Badges -->
+										<div class="project-tags">
+											<span>Unity</span>
+											<span>C#</span>
+											<span>OpenXR</span>
+											<span>Magic Leap 2</span>
+										</div>
+									</div>
+								</div>
+
+								<!-- Project Card 2 -->
 								<div class="project-card">
-									<img src="images/pic04.gif" alt="Project 1 Image" class="project-image">
+									<img src="images/recall_masks_saliency.gif" alt="Object masks on the left and a saliency heatmap on the right for the same frames of the AR office scene" class="project-image" loading="lazy">
+									<div class="project-description">
+										<h3>Object Recall in an Object-Rich AR Office Scene</h3>
+										<p>This Magic Leap 2 study received an Honorable Mention at the IEEE International Symposium on Mixed and Augmented Reality (ISMAR) 2026 and appears in IEEE Transactions on Visualization and Computer Graphics (TVCG). I am co-second author and built the comparison of saliency models against which objects people recalled. The paper reports five of those models across 1,024 participant-object recall observations.</p>
+										<!-- Language Tags/Badges -->
+										<div class="project-tags">
+											<span>Magic Leap 2</span>
+											<span>Saliency models</span>
+										</div>
+
+										<!-- Source Code Line and Message -->
+										<div class="project-code">
+											<hr>
+											<p>Paper: <a href="https://arxiv.org/abs/2610.18183" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Project Card 3 -->
+								<div class="project-card">
+									<img src="images/attention_model.png" alt="Diagram of object, task, scene and user-state factors feeding object recall" class="project-image contain" loading="lazy">
+									<div class="project-description">
+										<h3>Modeling Object Attention in Mobile AR</h3>
+										<p>My first-author paper models object recall in mobile AR with partial least squares structural equation modeling (PLS-SEM), pooling 1,152 recall events from four studies. It identifies lighting, augmentation density, AR registration stability, cognitive load and AR familiarity as primary drivers of recall and won the Best Paper Award at the ACM MobiHoc 2025 extended reality (XR) security workshop.</p>
+										<!-- Language Tags/Badges -->
+										<div class="project-tags">
+											<span>Python</span>
+											<span>R</span>
+										</div>
+
+										<!-- Source Code Line and Message -->
+										<div class="project-code">
+											<hr>
+											<p>Paper: <a href="https://doi.org/10.1145/3704413.3765308" target="_blank" rel="noopener noreferrer">ACM Digital Library</a></p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Project Card 4 -->
+								<div class="project-card">
+									<img src="images/switching_results.png" alt="Bar charts of search time per condition and per physical-virtual switch" class="project-image contain" loading="lazy">
+									<div class="project-description">
+										<h3>The Cost of Virtuality Switching</h3>
+										<p>Published at IEEE ISMAR 2025 with me as a co-author, this paper studies the cost of switching between physical and virtual targets while searching in optical see-through augmented reality.</p>
+
+										<!-- Source Code Line and Message -->
+										<div class="project-code">
+											<hr>
+											<p>Paper: <a href="https://doi.org/10.1109/ISMAR67309.2025.00168" target="_blank" rel="noopener noreferrer">IEEE Xplore</a></p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Project Card 5 -->
+								<div class="project-card">
+									<img src="images/navigation_statue.png" alt="AR view of a gallery hallway with a virtual statue among real exhibits" class="project-image" loading="lazy">
+									<div class="project-description">
+										<h3>Scene Awareness While Using Multiple Navigation Aids in AR Search</h3>
+										<p>I co-authored this HoloLens 2 study of scene awareness while several AR navigation aids guide a search, published as a poster in the IEEE ISMAR 2025 Adjunct proceedings.</p>
+										<!-- Language Tags/Badges -->
+										<div class="project-tags">
+											<span>HoloLens 2</span>
+										</div>
+
+										<!-- Source Code Line and Message -->
+										<div class="project-code">
+											<hr>
+											<p>Paper: <a href="https://doi.org/10.1109/ISMAR-Adjunct68609.2025.00135" target="_blank" rel="noopener noreferrer">IEEE Xplore</a></p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Project Card 6 -->
+								<div class="project-card">
+									<img src="images/pic05.png" alt="3D graph of samples clustered by class, raised by reconstruction error" class="project-image contain" loading="lazy">
+									<div class="project-description">
+										<h3>GUARD: Detecting Unknown Attacks with Graph-Based Deep Learning</h3>
+										<p>GUARD (Graph-based Unknown Attack Recognition and Detection), my first-author paper at the IEEE International Workshop on Information Forensics and Security (WIFS) 2024, detects attack classes the model never saw in training. An autoencoder's latent representations and reconstruction error become the vertices of a graph with cosine-similarity edges, and a new Hierarchical Quartet Loss separates attacks and attack families within it. On the NSL-KDD dataset it averaged 0.9163 recall on unknown attacks.</p>
+										<!-- Language Tags/Badges -->
+										<div class="project-tags">
+											<span>Python</span>
+										</div>
+
+										<!-- Source Code Line and Message -->
+										<div class="project-code">
+											<hr>
+											<p>Code: <a href="https://github.com/shanedirksen/GUARD" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+											<p>Paper: <a href="https://doi.org/10.1109/WIFS61860.2024.10810721" target="_blank" rel="noopener noreferrer">IEEE Xplore</a></p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Project Card 7 -->
+								<div class="project-card">
+									<img src="images/uav_rtabmap_workflow.png" alt="Figure 1 of the paper: workflow diagram of RTAB-Map, an existing SLAM library from other developers" class="project-image contain" loading="lazy">
+									<div class="project-description">
+										<h3>UAV Platforms for Search and Rescue in GPS-Denied Environments</h3>
+										<p>The team built and flight-tested two unmanned aerial vehicles (UAVs) for autonomous search and rescue where the Global Positioning System (GPS) is unavailable. The first maps its surroundings and locates itself with simultaneous localization and mapping (SLAM) and is designed to scan for victims with computer vision, and a second UAV is designed to deliver rescue packages to the victims the first one finds. I assisted the team in implementing its You Only Look Once (YOLO) object detection, and I am the fourth of six authors on the paper, published at the International Conference on Unmanned Aircraft Systems (ICUAS) 2022. The picture is Figure 1 of the paper: the workflow of RTAB-Map, an existing SLAM library from other developers.</p>
+										<!-- Language Tags/Badges -->
+										<div class="project-tags">
+											<span>YOLO</span>
+										</div>
+
+										<!-- Source Code Line and Message -->
+										<div class="project-code">
+											<hr>
+											<p>Paper: <a href="https://doi.org/10.1109/ICUAS54217.2022.9836181" target="_blank" rel="noopener noreferrer">IEEE Xplore</a></p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Project Card 8 -->
+								<div class="project-card">
+									<img src="images/diffusion_halfcheetah.gif" alt="HalfCheetah simulation clip from the diffusion planning project" class="project-image contain" loading="lazy">
+									<div class="project-description">
+										<h3>Diffusion Planning vs. Diffusion Policy</h3>
+										<p>Our team of four ran one diffusion model on the HalfCheetah simulation task in two ways, as a policy and as a planner that samples 16 action sequences, tries each in the simulator and acts on the best one. I built the framework, including the data pipeline, the diffusion models and samplers, both modes and the evaluation. The planner averaged a return of 14,117 against 11,988 for the policy.</p>
+										<!-- Language Tags/Badges -->
+										<div class="project-tags">
+											<span>Python</span>
+										</div>
+
+										<!-- Source Code Line and Message -->
+										<div class="project-code">
+											<hr>
+											<p>Code: <a href="https://github.com/shanedirksen/diffusion-planning-vs-policy" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Project Card 9 -->
+								<div class="project-card">
+									<img src="images/gazecam_example.gif" alt="Kitchen video from the wearer's view with the gaze point and the network's Grad-CAM heatmap" class="project-image contain dark" loading="lazy">
+									<div class="project-description">
+										<h3>Gaze-CAM</h3>
+										<p>Gaze-CAM compares where four video action-recognition networks look with where the actor looked, using egocentric video from the EGTEA Gaze+ dataset and Grad-CAM, a method that maps which parts of the input drove a network's decision. I built the pipeline that trains R3D-18, SlowFast, TimeSformer and ViViT, computes their Grad-CAM maps and scores them against gaze. TimeSformer's attention matched gaze most closely, while SlowFast scored below a center-bias baseline despite 59.8% accuracy.</p>
+										<!-- Language Tags/Badges -->
+										<div class="project-tags">
+											<span>Python</span>
+											<span>PyTorch</span>
+										</div>
+
+										<!-- Source Code Line and Message -->
+										<div class="project-code">
+											<hr>
+											<p>Code: <a href="https://github.com/maya-maye/Gaze-CAM" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Project Card 10 -->
+								<div class="project-card">
+									<img src="images/plasma_energy_drift.png" alt="Energy drift over 100 time steps for the hybrid model at three stencil sizes against the classical solver" class="project-image contain" loading="lazy">
+									<div class="project-description">
+										<h3>Graph Neural Network Surrogate for Plasma Simulation</h3>
+										<p>In a course project with three classmates, I worked on hybrid graph neural network (GNN) flux integrators that simulate one-dimensional fluid-Poisson plasma dynamics. I ran the ablation study across 12 hybrid models, created the upwind flux and forward Euler physics solver, and organized the project's GitHub repository. The hybrid took 5.5 ms per time step against 18.7 ms for the third-order Runge-Kutta (RK3) and Lax-Friedrichs solver, and its best configuration ended 100 time steps with about half the energy drift of the forward Euler solver.</p>
+
+										<!-- Source Code Line and Message -->
+										<div class="project-code">
+											<hr>
+											<p>Code: <a href="https://github.com/shanedirksen/gnn-plasma-flux" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Project Card 11 -->
+								<div class="project-card">
+									<img src="images/compiler_speedup.png" alt="Heatmap of speedup over eager PyTorch at batch size 1 for four models and four execution engines" class="project-image contain" loading="lazy">
+									<div class="project-description">
+										<h3>Ahead-of-Time vs. Just-in-Time Compilation for Deep Learning</h3>
+										<p>Ahead-of-time compilers optimize a whole model before it runs, and just-in-time compilers optimize it while it runs. With a teammate, I measured when either one pays off for running a trained model. We took two image networks (LeNet-5 and ResNet-18) and two recurrent networks, a long short-term memory (LSTM) network and a gated recurrent unit (GRU) network, and ran each through five execution engines, from plain PyTorch with no compiler (eager mode) to TensorRT. We recorded speed, graphics card (GPU) memory and energy at four batch sizes. I trained and validated the four models, wrote the TorchScript conversion and the just-in-time TorchScript engine for the benchmark, and added the significance tests and summary charts. At batch size 1, TensorRT ran the image networks about twice as fast as eager mode (2.12 and 2.00 times) but ran the recurrent networks at less than half of eager speed (0.42 and 0.44 times). At batch size 128 it was slower than eager mode on the image networks as well.</p>
+										<!-- Language Tags/Badges -->
+										<div class="project-tags">
+											<span>Python</span>
+											<span>PyTorch</span>
+											<span>TensorRT</span>
+											<span>ONNX Runtime</span>
+										</div>
+
+										<!-- Source Code Line and Message -->
+										<div class="project-code">
+											<hr>
+											<p>Code: <a href="https://github.com/rkibel/AheadOfItsTime" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Project Card 12 -->
+								<div class="project-card">
+									<img src="images/drone_sample.png" alt="Aerial view from one simulated drone with true and predicted depth and segmentation maps" class="project-image contain" loading="lazy">
+									<div class="project-description">
+										<h3>droneGAT</h3>
+										<p>In this course project with a teammate, 16 simulated drones fly in formation in the AirSim simulator and form a graph. A graph attention network (GAT) passes each drone's camera features to nearby drones, adjusted for their relative position and orientation, and each drone then predicts a depth map and a per-pixel class map (semantic segmentation) for its own view. I wrote the model and the training, testing and analysis code. With the cameras of 5 of the 16 drones corrupted by motion blur or noise, the best GAT run scored 0.70 mean intersection over union (mIoU, a 0 to 1 score of how well the predicted and true regions overlap) and 82.5% pixel accuracy on segmentation, level with the best run of the cross-attention model it was compared against (0.70 and 82.6%).</p>
+										<!-- Language Tags/Badges -->
+										<div class="project-tags">
+											<span>Python</span>
+											<span>AirSim</span>
+										</div>
+
+										<!-- Source Code Line and Message -->
+										<div class="project-code">
+											<hr>
+											<p>Code: <a href="https://github.com/shanedirksen/droneGAT" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Project Card 13 -->
+								<div class="project-card">
+									<img src="images/pic06.gif" alt="Gymnastics video with attention heatmaps over the athlete" class="project-image" loading="lazy">
+									<div class="project-description">
+										<h3>Action Recognition Networks and Human Saliency</h3>
+										<p>During a National Science Foundation Research Experiences for Undergraduates (REU) internship at Harvey Mudd College in Summer 2022, I ran Grad-CAM on an I3D action-recognition network in TensorFlow and compared where it looked with saliency data from human observers classifying videos. I was second of four authors on the team's USC REU Symposium 2022 presentation.</p>
+										<!-- Language Tags/Badges -->
+										<div class="project-tags">
+											<span>Python</span>
+										</div>
+
+										<!-- Source Code Line and Message -->
+										<div class="project-code">
+											<hr>
+											<p>Code: <span>not public</span></p>
+										</div>
+									</div>
+								</div>
+
+								<!-- Project Card 14 -->
+								<div class="project-card wide">
+									<div class="project-images">
+										<img src="images/pic04.gif" alt="Smoke detection mask and sparse optical flow on wildfire video" class="project-image" loading="lazy">
+										<img src="images/wildfire_twin.png" alt="Wildfire digital twin in NVIDIA Omniverse" class="project-image" loading="lazy">
+									</div>
 									<div class="project-description">
 										<h3>Wildfire Spread Prediction</h3>
 										<p>Given limited imagery from high altitude cameras and sensors, this project aims to both detect wildfires and predict fire spread.</p>
-										<p>In this video, the smoke detection model outputs a mask, dilates it, and uses sparse optical flow. Given the camera angle, the Ground Sampling Distance (GSD), and framerate, the system can determine wind speed and direction. This then is fed into the overal fire spread prediction model.</p>
+										<p>In this video, the smoke detection model outputs a mask, dilates it, and uses sparse optical flow. Given the camera angle, the Ground Sampling Distance (GSD), and framerate, the system can determine wind speed and direction. This then is fed into the overall fire spread prediction model.</p>
+										<p>I also built a program that turns burned-area maps from historical fires into finer time steps and fed that data into a digital twin in NVIDIA Omniverse, shown in the second image.</p>
 										<!-- Language Tags/Badges -->
 										<div class="project-tags">
 											<span>Python</span>
 											<span>NVIDIA Omniverse</span>
 										</div>
-								
+
 										<!-- Source Code Line and Message -->
 										<div class="project-code">
 											<hr>
-											<p>Code: <span>Code is Currently Not Released to the Public</span></p>
+											<p>Code: <span>not public</span></p>
 										</div>
 									</div>
 								</div>
-								
 
-								<!-- Project Card 2 -->
-								<div class="project-card">
-									<img src="images/pic05.png" alt="Project 2 Image" class="project-image">
-									<div class="project-description">
-										<h3>Anomaly Detection using Graph-Based Deep Learning</h3>
-										<p>Using the latent representations and the reconstruction error as the graph vertices, with cosine similarity to represent the edges, the model can then identify which class samples belong to unknown classes. This research also introduces a novel loss, which aims to improve the modularity of the known classes within the graph.</p>
-									<!-- Language Tags/Badges -->
-									<div class="project-tags">
-										<span>Python</span>
+								<!-- Project Card 15 -->
+								<div class="project-card wide">
+									<div class="project-images">
+										<img src="images/pic07.png" alt="Four photos with rendered product boxes composited in" class="project-image" loading="lazy">
+										<img src="images/synthetic_boxes.png" alt="Semi-synthetic image with labeled bounding boxes" class="project-image" loading="lazy">
 									</div>
-							
-									<!-- Source Code Line and Message -->
-									<div class="project-code">
-										<hr>
-										<p>Code: <a href="https://github.com/shanedirksen/GUARD">Github</a></p>
-									</div>
-								</div>
-							</div>
-							
-
-								<!-- Project Card 3 -->
-								<div class="project-card">
-									<img src="images/pic06.gif" alt="Project 3 Image" class="project-image">
-									<div class="project-description">
-										<h3>Action Recognition Networks and Human Saliency</h3>
-										<p>Reseach project that focuses on comparing and analyzing what human observers and action recognition networks observe when tasked with identifying an action in a video.</p>
-									<!-- Language Tags/Badges -->
-									<div class="project-tags">
-										<span>Python</span>
-									</div>
-							
-									<!-- Source Code Line and Message -->
-									<div class="project-code">
-										<hr>
-										<p>Code: <span>Code is Currently Not Released to the Public</span></p>
-									</div>
-								</div>
-							</div>
-							
-
-								<!-- Project Card 4 -->
-								<div class="project-card">
-									<img src="images/pic07.png" alt="Project 4 Image" class="project-image">
 									<div class="project-description">
 										<h3>Semi-Synthetic Dataset Generation</h3>
-										<p>This project generates large, unique image datasets using real world imagery for backgrounds and synthetic objects that are placed within the scene. The dataset also generates coordinates and labels for the respective bounding boxes of the objects.</p>
-									<!-- Language Tags/Badges -->
-									<div class="project-tags">
-										<span>Python</span>
-										<span>MEL</span>
-										<span>Maya 2022</span>
-									</div>
-							
-									<!-- Source Code Line and Message -->
-									<div class="project-code">
-										<hr>
-										<p>Code: <span>Github</span></p>
+										<p>Through Cal Poly Pomona's Research through Inclusive Opportunities (RIO) program, I wrote scripts in Maya 2022 and MEL, Maya's scripting language, that place synthetic objects into real-world background photos and record each object's bounding box and label, producing large, varied image datasets.</p>
+										<!-- Language Tags/Badges -->
+										<div class="project-tags">
+											<span>Python</span>
+											<span>MEL</span>
+											<span>Maya 2022</span>
+										</div>
+
+										<!-- Source Code Line and Message -->
+										<div class="project-code">
+											<hr>
+											<p>Code: <a href="https://github.com/shanedirksen/Semi-Synthetic-Dataset-Generator" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+										</div>
 									</div>
 								</div>
-							</div>
+
 							
+								</div>
 							</article>
 				
 						<!-- Resume -->
 						<article id="resume">
 							<h2 class="major">Resume</h2>
 							
+							<!-- Research Interests -->
+							<h3>Research Interests</h3>
+							<ul>
+								<li>Modulating saliency to affect human cognition in augmented and virtual reality (AR and VR), whether through conventional highlighting techniques or through AI that modulates saliency without losing information in the scene.</li>
+								<li>Human attention, perception and memory in mobile augmented reality; human-subject studies on HoloLens 2 and Magic Leap 2; statistical modeling; computer vision.</li>
+							</ul>
+
 							<!-- Education -->
 							<h3>Education</h3>
 
-							<!-- Cal Poly Pomona -->
-							<strong>University of California, Santa Barbara</strong> <em>Fall 2024 – Current</em>
+							<!-- UC Santa Barbara -->
+							<strong>University of California, Santa Barbara</strong> <em>Sep 2024 – Jun 2028 (expected)</em>
 							<ul>
-								<li>Working in Professor Tobias Hollerer's lab.</li>
+								<li>Ph.D. in Computer Science, GPA 3.78.</li>
+								<li>Advisor: Prof. Tobias Höllerer, Four Eyes Lab.</li>
+								<li>Admitted with a five-year support package (fellowship plus teaching assistant and graduate student researcher employment); Cal-Bridge Doctoral Scholar.</li>
+								<li>Coursework: Advanced Topics in Computer Vision; Computer Graphics (C++); Runtime Systems; research seminar CMPSC 595N (Winter 2025); Directed Research every quarter.</li>
 							</ul>
-							
+
 							<!-- Cal Poly Pomona -->
-							<strong>Cal Poly Pomona, Pomona, CA</strong> <em>Summer 2021 – Spring 2023</em>
+							<strong>California State Polytechnic University, Pomona</strong> <em>Summer 2021 – Dec 2022</em>
 							<ul>
-								<li>B.S. in Computer Science. GPA: 3.91</li>
-								<li>Undergraduate Coursework: Artificial Intelligence; Machine Learning; Systems Programming; Numerical Methods; Concepts of Programming Languages; Software Engineering; C++ Programming; Computer Architecture; Computer Networks.</li>
-								<li>Scholarships: Cal-Bridge Scholarship; Sally Casanova Pre-Doctoral Scholarship; Last Mile Fellowship; Boots to Broncos Scholarship.</li>
+								<li>B.S. in Computer Science, GPA 3.91, Magna Cum Laude.</li>
+								<li>Dean's List (Fall 2021, Spring 2022, Fall 2022); Research Distinction Award (Spring 2022).</li>
+								<li>Scholarships: Cal-Bridge Scholarship, Sally Casanova Pre-Doctoral Scholarship, Last Mile Fellowship, Boots to Broncos Scholarship.</li>
+								<li>Coursework: Artificial Intelligence, Machine Learning, Systems Programming, Numerical Methods, Programming Languages, Software Engineering, C++, Computer Architecture, Computer Networks.</li>
 							</ul>
 
 							<!-- College of the Canyons -->
 							<strong>College of the Canyons, Santa Clarita, CA</strong> <em>Fall 2020 – Spring 2021</em>
 							<ul>
-								<li>AS-T in Computer Science, May 2021. GPA: 3.87</li>
-								<li>Undergraduate Coursework: Intro to Algorithms and Programming/Java; Architecture/Assembly Language; Mechanics of Solids and Fluids; Data Structures/Programming Design; Physics: Electricity/Magnetism; Calculus II.</li>
-								<li>Scholarship: Chief Information System Officers Association Scholarship.</li>
-							</ul>
-
-							<!-- Employment -->
-							<h3>Employment</h3>
-							
-							<!-- ICON Labs -->
-							<strong>ICON Labs, Pomona, CA</strong> <em>Summer 2023</em>
-							<ul>
-								<li>Conducted research on satellite-based wildfire detection and prediction using deep learning. Python</li>
-								<li>Developed an optical flow algorithm to ascertain wind speed and direction; implemented a digital twin platform for dynamic wildfire growth influenced by wind vectors.</li>
-							</ul>
-
-							<!-- Harvey Mudd College -->
-							<strong>Harvey Mudd College, Claremont, CA</strong> <em>Summer 2022</em>
-							<ul>
-								<li>Research in computer vision with action recognition networks. Python</li>
-								<li>Used data from human observers when tasked with classifying a video and compared with an action recognition network to make analysis and comparisons.</li>
-							</ul>
-
-							<!-- Allied Universal -->
-							<strong>Field Supervisor, Allied Universal</strong> <em>Dec 2017 – Dec 2022</em>
-							<ul>
-								<li>Responsible for conducting inspections on Security Officers at various sites.</li>
-								<li>Site Supervisor for 3 college campuses, responsible for 18 Security Officers, and 6 Student Workers.</li>
-							</ul>
-
-							<!-- US Army -->
-							<strong>Airborne Infantry, Specialist, US Army</strong> <em>Jan 2013 – May 2017</em>
-							<ul>
-								<li>Signed for over $400k worth of equipment as a machine gunner; team leader of four soldiers.</li>
-								<li>Responded to 14 emergency response situations, tracked over 700 convoys while deployed in the Balkans.</li>
+								<li>Associate in Science for Transfer (A.S.-T.) in Computer Science, GPA 3.87.</li>
+								<li>Chief Information System Officers Association Scholarship.</li>
+								<li>Coursework: Intro to Algorithms and Programming (Java), Architecture and Assembly Language, Data Structures and Program Design, Mechanics of Solids and Fluids, Electricity and Magnetism, Calculus II.</li>
 							</ul>
 
 							<!-- Research Experience -->
 							<h3>Research Experience</h3>
+
+							<!-- UC Santa Barbara, Four Eyes Lab -->
+							<strong>Graduate Student Researcher, Four Eyes Lab, UC Santa Barbara (Prof. Tobias Höllerer)</strong> <em>Sep 2024 – Present</em>
 							<ul>
-								<li><strong>Anomaly Detection via STARS (Student Success and Transfer Articulation through Research and Support Services) (2022–Current)</strong>: Developed a novel anomaly detection framework combining autoencoders and graph-based techniques. Implemented a model that encodes the latent space representations and reconstruction error into a graph to identify unknown classes. Python</li>
-								<li><strong>Semi-Synthetic Image Dataset Generation via RIO (Research through Inclusive Opportunities) Program (2021–2022)</strong>: Conducted computer vision research. Generated a data set using 3D modeling software. A script generates unique, realistic pictures and a python program detects the bounding boxes. The data set is used to train a deep neural network model for object detection. Python, MEL</li>
-								<li><strong>Autonomous UAV Research (2021–2022)</strong>: Autonomous Navigation of UAVs in Indoor Environments for Search and Rescue Missions (Use simultaneous localization and mapping (SLAM) and other techniques for autonomous navigation of UAVs in the GPS-denied indoor environments). Python</li>
-								<li><strong>Cryptocurrency Price Analysis (2021–2022):</strong> Conducting various analyses to identify price indicators related to cryptocurrencies, such as co-variance analysis and frequency analysis. Python</li>
+								<li>Lead developer and experimenter on an ongoing Magic Leap 2 study in DARPA's Intrinsic Cognitive Security program.</li>
+								<li>Built the full study pipeline: a Unity/OpenXR application with ArUco and spatial-anchor room calibration and per-frame logging of head pose, eye gaze and controller pose.</li>
+								<li>Prepared four physical rooms, each augmented with 16 virtual objects alongside 16 real ones, with room membership balanced by multi-rater norming.</li>
+								<li>Cut imbalance loss from 1.50 to 0.27 (final deployed run) with a simulated-annealing placement optimizer that recomputes Itti-Koch-style saliency on 14 depth-composited perspective views per proposal and balances saliency, apparent size, congruency and modality.</li>
+								<li>Built the study's Latin-square session schedule and per-participant printouts, plus replay and analysis tooling for gaze and selection data.</li>
+								<li>Built a saliency-model comparison relating per-object saliency to recall in the published 32-participant Magic Leap 2 office study: 19 models on 32 isolated object images in the analysis repository; the paper reports five models; the five-model analysis covers 1,024 participant-object recall observations; co-second author (equal contribution), IEEE International Symposium on Mixed and Augmented Reality (ISMAR) 2026 / IEEE Transactions on Visualization and Computer Graphics (TVCG), Honorable Mention.</li>
+								<li>Modeled AR object attention with partial least squares structural equation modeling (PLS-SEM; three formative composites: object, scene and user state) across 1,152 recall events pooled from four studies, in Python and R (seminr); F1 equal to or above random-forest and multilayer perceptron (MLP) baselines in three of four studies; first author, ACM MobiHoc 2025 extended reality (XR) security workshop, Best Paper Award.</li>
+								<li>The pooled model explains R² = 0.254 for object recall; the paper's path estimates identify lighting, augmentation density, AR registration stability, cognitive load and AR familiarity as primary drivers.</li>
+								<li>Built replay and gaze-chart tooling in Python for one of the lab's AR studies and implemented it for four earlier ones.</li>
+								<li>Ran metrics and saliency tests for five of the lab's AR studies.</li>
+								<li>Co-authored the IEEE ISMAR 2025 Adjunct poster (4th of 8) on a HoloLens 2 navigation-aid study.</li>
+								<li>Co-authored a study of searching for physical and virtual targets in optical-see-through AR (IEEE ISMAR 2025, fourth author).</li>
+							</ul>
+
+							<!-- Bronco Space / ICON Lab -->
+							<strong>Software Engineer Intern, Bronco Space / ICON Lab, Cal Poly Pomona</strong> <em>May 2023 – Aug 2023</em>
+							<ul>
+								<li>Trained U-Net detection models for satellite-based wildfire detection and conducted research on deep-learning wildfire spread prediction.</li>
+								<li>Integrated the team's smoke (RGB color images) and flame (short-wave infrared) segmentation models into one detection system with a training and testing pipeline that uses sigmoid focal loss and intersection over union (IoU) and macro F1 evaluation.</li>
+								<li>Developed an optical-flow algorithm that determines wind speed and direction from high-altitude camera imagery, using sparse optical flow on a dilated smoke-detection mask with the camera angle, ground sampling distance and framerate; designed to feed the fire-spread prediction model.</li>
+								<li>Implemented a digital twin platform in NVIDIA Omniverse for dynamic wildfire growth.</li>
+								<li>Interpolated daily burned-area maps of the 2020 Loyalton Fire into 15-minute fire-growth frames and replayed them in the Omniverse scene through a scripted Universal Scene Description (USD) scene and a behavior script that places a fire emitter on each burned cell.</li>
+								<li>Created a vegetation index from short-wave infrared and RGB imagery as a substitute for near-infrared vegetation indices, used as an input to the fire-spread prediction model; matched it pixel by pixel to a satellite vegetation image through a homography.</li>
+								<li>Aligned short-wave infrared and RGB camera images with AKAZE feature matching after contrast-limited adaptive histogram equalization (CLAHE) and histogram equalization.</li>
+								<li>Work done for the lab's Bronco Ember project, a NASA TechLeap Autonomous Observation Challenge winner.</li>
+								<li>The work led to the American Geophysical Union (AGU) Fall Meeting 2023 poster “Generative Transformer and Digital Twin Fusion for Wildfire Data Generation”.</li>
+							</ul>
+
+							<!-- Harvey Mudd College -->
+							<strong>Research Intern, National Science Foundation Research Experiences for Undergraduates (NSF REU), Harvey Mudd College, Claremont, CA</strong> <em>Summer 2022</em>
+							<ul>
+								<li>On a team, ran Grad-CAM, a method that maps which parts of the input drove a network's decision, on an I3D action-recognition network (TensorFlow) and compared its attention with human-observer saliency data on video classification; the team also used SlowFast; 2nd of 4 authors, University of Southern California (USC) REU Symposium 2022.</li>
+							</ul>
+
+							<!-- Cal Poly Pomona undergraduate research -->
+							<strong>Student Researcher, Cal Poly Pomona (undergraduate research)</strong> <em>2021 – 2023</em>
+							<ul>
+								<li><strong>GUARD, Graph-based Unknown Attack Recognition and Detection (Student Success and Transfer Articulation through Research and Support Services (STARS) program, 2022–2023):</strong> encoded autoencoder latent representations and reconstruction error as a graph with cosine-similarity edges to detect unknown attack classes, with a novel Hierarchical Quartet Loss designed to separate attacks and attack families; first author, IEEE International Workshop on Information Forensics and Security (WIFS) 2024; <a href="https://github.com/shanedirksen/GUARD" target="_blank" rel="noopener noreferrer">public repository</a>.
+									<ul>
+										<li>On the NSL-KDD dataset, recall on unknown attacks averaged 0.9163 (denial of service 0.9740, probe 0.9420, remote-to-local 0.9040, user-to-root 0.8452).</li>
+										<li>Baselines, taken from a published meta-study of 47 machine-learning algorithms (its five highest unknown-attack recall methods), averaged 0.6458 (Fastai), 0.6555 (PyTorch), 0.6680 (FASTABOD, fast angle-based outlier detection), 0.6818 (HBOS, histogram-based outlier score) and 0.7724 (Decision Tree 5).</li>
+										<li>Unknown-attack F1 averaged 0.8691.</li>
+										<li>The Hierarchical Quartet Loss uses α = 0.2 within an attack family and β = 0.5 between families.</li>
+									</ul>
+								</li>
+								<li>Presented earlier STARS cyber anomaly-detection work at the Cal Poly Pomona Science Symposium (2022, 2023) and the Southern California Conferences for Undergraduate Research (SCCUR) 2022.</li>
+								<li><strong>Semi-synthetic image datasets (Research through Inclusive Opportunities (RIO) program, 2021–2022):</strong> built a generator in Maya 2022 and MEL, Maya's scripting language, that composites synthetic objects onto real backgrounds with automatic bounding-box labels; <a href="https://github.com/shanedirksen/Semi-Synthetic-Dataset-Generator" target="_blank" rel="noopener noreferrer">public repository</a>; Research, Scholarship &amp; Creative Activities (RSCA) Conference 2022.</li>
+								<li><strong>Autonomous unmanned aerial vehicle (UAV) in GPS-denied environments (2021–2022):</strong> assisted a team implementing You Only Look Once (YOLO) object detection on an autonomous UAV for GPS-denied indoor search and rescue, with navigation by simultaneous localization and mapping (SLAM); 4th of 6 authors, International Conference on Unmanned Aircraft Systems (ICUAS) 2022.</li>
+								<li><strong>Cryptocurrency price analysis (2021–2022):</strong> covariance and frequency analysis of price indicators.</li>
+								<li><strong>VR carnival games (2022):</strong> Unity VR project; co-presenter, Cal Poly Pomona Science Symposium 2022.</li>
 							</ul>
 
 							<!-- Publications -->
 							<h3>Publications</h3>
 							<ul>
-								<li>E. Ngo, J. Ramirez, M. Medina-Soto, S. Dirksen, E. D. Victoriano and S. Bhandari, ”UAV Platforms for Autonomous Navigation in GPS-Denied Environments for Search and Rescue Missions,” 2022 International Conference on Unmanned Aircraft Systems (ICUAS), 2022, pp. 1481-1488, doi: 10.1109/ICUAS54217.2022.9836181.</li>
+								<li>S. Kunapuli, <strong>S. Dirksen</strong>*, R. Kumaran*, Y. Jin, Y.-J. Kim, M. Sra and T. Höllerer, “Exploring Object Recall in an Object-Rich AR Office Scene,” IEEE Transactions on Visualization and Computer Graphics, vol. 32, 2026 (IEEE ISMAR 2026 journal track), <a href="https://arxiv.org/abs/2610.18183" target="_blank" rel="noopener noreferrer">arXiv:2610.18183</a>. *Equal contribution. <strong>Honorable Mention, ISMAR 2026.</strong></li>
+								<li><strong>S. Dirksen</strong>, R. Kumaran, Y.-J. Kim, Y. Wang and T. Höllerer, “Modeling Object Attention in Mobile AR for Intrinsic Cognitive Security,” Proc. 26th ACM International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing (MobiHoc '25), First Workshop on Enhancing Security, Privacy, and Trust in Extended Reality (XR) Systems, 2025, pp. 479-484, doi: <a href="https://doi.org/10.1145/3704413.3765308" target="_blank" rel="noopener noreferrer">10.1145/3704413.3765308</a>, <a href="https://arxiv.org/abs/2510.24004" target="_blank" rel="noopener noreferrer">arXiv:2510.24004</a>. <strong>Best Paper Award.</strong></li>
+								<li>K. Yu, Y. Luo, R. Kumaran, <strong>S. Dirksen</strong>, M. Sra and T. Höllerer, “The Cost of Virtuality Switching: Searching for Physical and Virtual Targets in Optical-See-Through Augmented Reality,” IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 2025, pp. 1649-1659, doi: <a href="https://doi.org/10.1109/ISMAR67309.2025.00168" target="_blank" rel="noopener noreferrer">10.1109/ISMAR67309.2025.00168</a>.</li>
+								<li>R. Kumaran, Y.-J. Kim, E. Machniak, <strong>S. Dirksen</strong>, J. Yoon, T. Bullock, B. Giesbrecht and T. Höllerer, “Scene Awareness While Using Multiple Navigation Aids in AR Search,” IEEE ISMAR 2025 Adjunct (poster), 2025, pp. 652-653, doi: <a href="https://doi.org/10.1109/ISMAR-Adjunct68609.2025.00135" target="_blank" rel="noopener noreferrer">10.1109/ISMAR-Adjunct68609.2025.00135</a>, <a href="https://arxiv.org/abs/2511.16805" target="_blank" rel="noopener noreferrer">arXiv:2511.16805</a>.</li>
+								<li><strong>S. Dirksen</strong> and J. Korah, “GUARD: Graph-based Unknown Attack Recognition and Detection,” IEEE International Workshop on Information Forensics and Security (WIFS), 2024, pp. 1-6, doi: <a href="https://doi.org/10.1109/WIFS61860.2024.10810721" target="_blank" rel="noopener noreferrer">10.1109/WIFS61860.2024.10810721</a>.</li>
+								<li>E. Ngo, J. Ramirez, M. Medina-Soto, <strong>S. Dirksen</strong>, E. D. Victoriano and S. Bhandari, “UAV Platforms for Autonomous Navigation in GPS-Denied Environments for Search and Rescue Missions,” 2022 International Conference on Unmanned Aircraft Systems (ICUAS), 2022, pp. 1481-1488, doi: <a href="https://doi.org/10.1109/ICUAS54217.2022.9836181" target="_blank" rel="noopener noreferrer">10.1109/ICUAS54217.2022.9836181</a>.</li>
 							</ul>
 
 							<!-- Presentations -->
 							<h3>Presentations</h3>
 							<ul>
-								<li>Dirksen, S., Ernesto, C., & Korah, J. (Spring, 2023). Using Explainable AI with Deep Autoencoders and Recurrent Neural Networks for Cyber Anomaly Detection. Science Symposium.</li>
-								<li>Dirksen, S., & Korah, J. (Fall, 2022). Removing the Black Box: Parallelization of Neural-Backed Decision Trees for Explanation Based Cyber Anomaly Detection. Southern California Conferences for Undergraduate Research.</li>
-								<li>Morgan, M., Dirksen, S., Chang, R., & Wloka, C. (Summer, 2022). Do Machine Learning Methods for Action Recognition Focus on the Same Video Elements as Human Viewers? USC REU Symposium.</li>
-								<li>Dirksen, S., & Ji, H. (Spring, 2022). Generation of Semi-Synthetic Image Datasets for Training Deep Learning Models. Research, Scholarship & Creative Activities Conference.</li>
-								<li>Lee, J., Barrientos, J., Townsend, K., Dirksen, S., Ullum, K., & Eger, M. (Spring 2022). Carnival Games using Virtual Reality. Science Symposium.</li>
-								<li>Dirksen, S., Reddy, V., & Korah, J. (Spring, 2022). Parallel Designs for Machine Learning Based Cybersecurity Anomaly Detection. Science Symposium.</li>
+								<li>“Generative Transformer and Digital Twin Fusion for Wildfire Data Generation.” With Z. Gaines. AGU Fall Meeting, Dec 2023.</li>
+								<li><strong>S. Dirksen</strong>, C. Ernesto, J. Korah. “Using Explainable AI with Deep Autoencoders and Recurrent Neural Networks for Cyber Anomaly Detection.” Cal Poly Pomona Science Symposium, Spring 2023.</li>
+								<li><strong>S. Dirksen</strong>, J. Korah. “Removing the Black Box: Parallelization of Neural-Backed Decision Trees for Explanation-Based Cyber Anomaly Detection.” Southern California Conferences for Undergraduate Research, Fall 2022.</li>
+								<li>M. Morgan, <strong>S. Dirksen</strong>, R. Chang, C. Wloka. “Do Machine Learning Methods for Action Recognition Focus on the Same Video Elements as Human Viewers?” USC REU Symposium, Summer 2022.</li>
+								<li><strong>S. Dirksen</strong>, H. Ji. “Generation of Semi-Synthetic Image Datasets for Training Deep Learning Models.” RSCA Conference, Spring 2022.</li>
+								<li>J. Lee, J. Barrientos, K. Townsend, <strong>S. Dirksen</strong>, K. Ullum, M. Eger. “Carnival Games using Virtual Reality.” Cal Poly Pomona Science Symposium, Spring 2022.</li>
+								<li><strong>S. Dirksen</strong>, V. Reddy, J. Korah. “Parallel Designs for Machine Learning Based Cybersecurity Anomaly Detection.” Cal Poly Pomona Science Symposium, Spring 2022.</li>
 							</ul>
 
-							<!-- Professional Development -->
-							<h3>Professional Development</h3>
-							<h4>Academic Affiliations</h4>
+							<!-- Teaching -->
+							<h3>Teaching</h3>
+
+							<!-- Teaching Assistant -->
+							<strong>Teaching Assistant, CMPSC 32: Object-Oriented Design and Implementation, UC Santa Barbara</strong> <em>Spring 2025</em>
 							<ul>
-								<li>Google Developers Club CPP: Vice President of Administration, interim President. Responsible for scheduling and managing all club events and meetings, as well as managing all club finances.</li>
-								<li>Forensics and Security Technology Club: Member of the Blockchain Research Team. Responsible for cryptography research. Presented findings and provided instruction to club members.</li>
-							</ul>
-							<h4>Research Programs</h4>
-							<ul>
-								<li>Cal-Bridge Scholar (2022–Current): Selected as a scholar for the Cal-Bridge program. Attended various workshops and mentorship programs.</li>
-								<li>CS Research Mentorship Program (CSRMP), Google Research (2023). Google sponsored research mentorship program.</li>
-								<li>Office of Undergrad Research (OUR) GRAD Program (2021–2022): OUR Grad Scholar.</li>
+								<li>Completed the teaching assistant training courses CMPSC 501 (Fall 2024) and CMPSC 502 (Spring 2025).</li>
 							</ul>
 
-							<!-- Additional Education -->
-							<h3>Additional Education</h3>
+							<!-- Code Ninjas -->
+							<strong>Coding Tutor, Code Ninjas, Encino, CA</strong> <em>Sep 2023 – Apr 2024</em>
 							<ul>
-								<li>Data Science Immersion (DSI), Divergence Academy (2023). Data Science bootcamp; studied tools such as PowerBI, Databricks, and SQL.</li>
-								<li>CodePath’s Cybersecurity Course (Spring 2022). Explored web application security, vulnerability exploitation, and simulated real-world cyber threats.</li>
-								<li>Big Data and Cloud Computing Apprenticeship (2021–2022). Received training in utilizing various cloud computing platforms. Created a stock/crypto price prediction via machine learning and investment automation.</li>
-								<li>Achieve Scholars (ASP) Program (2021–2022): ASP Scholar.</li>
+								<li>Taught students aged 5 to 14 using block coding, JavaScript and C#; taught classes of 20+ students at special events.</li>
 							</ul>
 
-							<!-- Languages and Software -->
-							<h3>Languages and Software</h3>
+							<!-- Honors, Fellowships and Awards -->
+							<h3>Honors, Fellowships and Awards</h3>
 							<ul>
-								<li>C, C++, C#, Java, MEL, SQL, Python, Ruby</li>
-								<li>Visual Studio, MySQL, PyCharm, Unity, NetBeans, Maya 2022, NVIDIA Omniverse</li>
-								<li>Amazon Web services, Google Cloud Platform, Microsoft Azure</li>
+								<li>Best Paper Award (first author), First Workshop on Enhancing Security, Privacy, and Trust in Extended Reality (XR) Systems, ACM MobiHoc 2025.</li>
+								<li>Honorable Mention, IEEE ISMAR 2026, for “Exploring Object Recall in an Object-Rich AR Office Scene” (co-second author).</li>
+								<li>Cal-Bridge Doctoral Scholar (2024–Present); Cal-Bridge Scholar (2022–2024).</li>
+								<li>Google Research CS Research Mentorship Program (CSRMP), 2023; STEM Advantage Scholar, Spring 2023.</li>
+								<li>Sally Casanova Pre-Doctoral Scholar; Last Mile Fellow; Boots to Broncos Scholar; Chief Information System Officers Association Scholar.</li>
+								<li>Research Distinction Award, Cal Poly Pomona (Spring 2022); Dean's List, Cal Poly Pomona (Fall 2021, Spring 2022, Fall 2022).</li>
+								<li>McNair Scholars Preparatory Program (2021–2022); Office of Undergraduate Research GRAD Program (2021–2022); Achieve Scholars Program (2021–2022).</li>
+								<li>First-generation college student.</li>
+							</ul>
+
+							<!-- Skills -->
+							<h3>Skills</h3>
+							<ul>
+								<li><strong>Languages:</strong> Python (primary), C#, C++, Java, JavaScript, R, SQL, Ruby, HTML (minor), MATLAB; some Rust.</li>
+								<li><strong>Machine learning and computer vision (since 2022):</strong> PyTorch, TensorFlow, autoencoders, graph neural networks (GNN; graph attention networks and hybrid GNN flux integrators), optical flow, U-Net detection models, YOLO object detection, 3D convolutional neural network (CNN) action recognition, Grad-CAM, saliency models, diffusion models, synthetic data generation.</li>
+								<li><strong>AR/VR and human-computer interaction (HCI):</strong> Unity with OpenXR (Magic Leap 2), Universal Render Pipeline (URP), eye tracking on Magic Leap 2, ArUco-marker and spatial-anchor room calibration, controller input and per-frame logging, replay tooling for gaze and selection data, Qualtrics instruments, within-subject designs with Latin-square counterbalancing, multi-rater stimulus norming, custom object-placement optimization (saliency, size, congruency, modality), dual-task paradigms, recall and visual-search tasks.</li>
+								<li><strong>Statistics and experimental analysis:</strong> PLS-SEM (seminr, custom Python), signal detection theory, pandas/openpyxl data pipelines.</li>
+								<li><strong>Tools and platforms:</strong> Linux (Ubuntu), Amazon Web Services (AWS), Google Cloud Platform (GCP), Microsoft Azure, Power BI, Databricks, Tauri, Three.js, Git/GitHub, MySQL, Figma.</li>
+							</ul>
+
+							<!-- Service and Leadership -->
+							<h3>Service and Leadership</h3>
+							<ul>
+								<li>Vice President of Administration and interim President, Google Developers Club, Cal Poly Pomona (events, finances).</li>
+								<li>Member, Blockchain Research Team, Forensics and Security Technology Club (2021); led the team's cryptography research, presented findings to club members.</li>
+								<li>Member, Students with an Interest in the Future of Technology; Member, Computer Science Society.</li>
+							</ul>
+
+							<!-- Professional Experience -->
+							<h3>Professional Experience</h3>
+
+							<!-- Allied Universal -->
+							<strong>Field Supervisor, Allied Universal</strong> <em>Aug 2020 – Dec 2022</em>
+							<ul>
+								<li>Inspected and supervised officers across 20+ sites.</li>
+							</ul>
+
+							<!-- First Alarm -->
+							<strong>Site Supervisor, First Alarm</strong> <em>Jul 2019 – Jul 2020</em>
+							<ul>
+								<li>Site supervisor for 3 college campuses, 18 security officers and 6 student workers; oversaw the rollout of new ticketing software; managed scheduling and payroll.</li>
+							</ul>
+
+							<!-- Military Service -->
+							<h3>Military Service</h3>
+
+							<!-- US Army -->
+							<strong>Specialist (E-4), Airborne Infantry, United States Army</strong> <em>Jan 2013 – May 2017</em>
+							<ul>
+								<li>Honorable discharge.</li>
+								<li>Radio telephone operator (Jan 2013 – Aug 2015): led a four-soldier shift team; gave weekly current-operations briefs to division-level staff.</li>
+								<li>Machine gunner, .50 cal (Aug 2015 – May 2017): accountable for $400K+ of equipment.</li>
+								<li>Peacekeeping deployment to Kosovo alongside multiple North Atlantic Treaty Organization (NATO) nations: 14 emergency responses, 700+ convoys tracked, riot-control training. Operation Cobra Gold (Thailand).</li>
+								<li>Qualifications: airborne (24 jumps); RQ-11 Raven UAV operator (2016); Blue Force Tracker and Force XXI Battle Command Brigade and Below (FBCB2) certified; Army leadership course (2015); Military Combatives assistant instructor (2017); National Registry emergency medical technician (EMT) certification (2017).</li>
+								<li>Awards: Army Commendation Medal (2015); two Army Achievement Medals (Cobra Gold; Joint Readiness Training Center, Fort Polk); Edelweiss badge (2015); German Schützenschnur, Gold (2015); Danish Contingent (DANCON) March medal, 50 km (2015).</li>
+							</ul>
+
+							<!-- Additional Training -->
+							<h3>Additional Training</h3>
+							<ul>
+								<li>Data Science Immersive, Divergence Academy, 2023: Power BI, Databricks, SQL.</li>
+								<li>CodePath Cybersecurity course, Spring 2022.</li>
+								<li>Big Data and Cloud Computing Apprenticeship, 2021–2022: AWS, GCP, Azure; stock and cryptocurrency prediction project.</li>
 							</ul>
 
 
@@ -585,8 +886,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Icons -->
 		<ul class="social-icons">
-			<li><a href="https://www.linkedin.com/in/shane-dirksen/" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
-			<li><a href="https://github.com/shanedirksen" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+			<li><a href="https://www.linkedin.com/in/shane-dirksen/" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="label">LinkedIn</span></a></li>
+			<li><a href="https://github.com/shanedirksen" class="icon brands fa-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><span class="label">GitHub</span></a></li>
+			<li><a href="https://scholar.google.com/citations?user=p3XEDZMAAAAJ" class="icon solid fa-graduation-cap" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><span class="label">Google Scholar</span></a></li>
+			<li><a href="https://orcid.org/0009-0001-1493-8169" class="icon brands fa-orcid" target="_blank" rel="noopener noreferrer" aria-label="ORCID"><span class="label">ORCID</span></a></li>
 		</ul>
 		
 	</body>
